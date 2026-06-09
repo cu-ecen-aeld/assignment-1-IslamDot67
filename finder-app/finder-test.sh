@@ -33,6 +33,12 @@ rm -rf "${WRITEDIR}"
 
 # create $WRITEDIR if not assignment1
 assignment=`cat ../conf/assignment.txt`
+#if [ -f ../conf/assignment.txt ]; then
+    #assignment=$(cat ../conf/assignment.txt)
+#else
+    #echo "Warning: ../conf/assignment.txt not found, defaulting to assignment1"
+    #assignment="assignment1"
+#fi
 
 if [ $assignment != 'assignment1' ]
 then
